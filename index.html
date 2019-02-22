@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="task.js" defer></script>
+</head>
+
+<body>
+    <div id="workspace">
+        <div id="left-weights"></div>
+        <div id="right-weights"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="inherit" height="5">
+            <line x1="0" y1="0" x2="500" y2="0" stroke="black" stroke-width="5" />
+        </svg>
+        <div id="storage-weights"></div>
+        <div id="interface">
+            <input id="input" type="number" min="0" max="20" value="1" />
+            <input type="button" value="ADD WEIGHT" onclick="addToStorage()" />
+            <p id="result" hidden>Штанга готова</p>
+        </div>
+    </div>
+</body>
+</html>
