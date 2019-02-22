@@ -2,8 +2,8 @@
 	width: 500px;
 	height: 200px;
 	top: 0;
-    right: 0;
-    bottom: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
 	position: absolute;
 	margin: auto;
@@ -11,14 +11,12 @@
 
 #left-weights {
 	height: 20px;
-	display: table;
 	float: left;
 }
 
 #right-weights {
 	height: 20px;
-	display: table;
-	float: right;
+	text-align: right;
 }
 
 #storage-weights {
@@ -29,9 +27,11 @@
 
 #interface {
 	width: inherit;
-	height: 200px;
 	margin-top: 120px;
-	position: absolute;
+}
+
+#result {
+	float: right;
 }
 
 .weight {

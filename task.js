@@ -14,8 +14,10 @@ function addToLeft(elem) {
 }
 
 function addToRight(elem) {
-    rights.appendChild(elem);
-    result.hidden = checkSum();
+    if (elem.parentNode.id === storage.id) {
+        rights.appendChild(elem);
+        result.hidden = checkSum();
+    }
 }
 
 function addToStorage() {
@@ -27,6 +29,9 @@ function addToStorage() {
 }
 
 function checkSum() {
+    if (lefts.childNodes.length === 0 || rights.childNodes === 0) {
+        return true;
+    }
     return !(getSum(lefts.childNodes) === getSum(rights.childNodes));
 }
 
